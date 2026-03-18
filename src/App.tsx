@@ -6,6 +6,7 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, MapPin, Phone, ExternalLink, ChevronDown, Code2, Database, Layout, Server, Cpu, Atom, FileCode2, Palette, FileType2, LayoutTemplate, Zap, Box, Globe, Cloud, Layers, Sparkles, CreditCard, GitBranch, Download } from 'lucide-react';
 import { useRef, useState } from 'react';
+import imageProfile from "../public/profile.png"
 import ParticleBackground from './components/ParticleBackground';
 import WaveBackground from './components/WaveBackground';
 import CustomCursor from './components/CustomCursor';
@@ -204,7 +205,7 @@ export default function App() {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" 
+                  src={imageProfile} 
                   alt="Mahmoud Reda Soltan" 
                   className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
